@@ -52,6 +52,7 @@ public class BurgerDaoImpl implements BurgerDao{
         return burger;
     }
 
+    @Transactional
     @Override
     public Burger remove(long id) {
         Burger found = findById(id);
